@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <header>
+        <div class="logo">🍽️ Food Fusion</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="chef.html">Chef</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="review.html">Reviews</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://img.freepik.com/free-photo/top-view-table-full-delicious-food-assortment_23-2149141359.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+        }
+
+        h1 {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 15px;
+            margin: 0;
+            font-size: 36px;
+        }
+
+        p {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        a {
+            display: inline-block;
+            margin: 15px;
+            padding: 10px 20px;
+            text-decoration: none;
+            background: rgba(255, 255, 255, 0.3);
+            color: white;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+
+        a:hover {
+            background: rgba(255, 255, 255, 0.5);
+        }
+        /* a {
+    display: inline-block;
+    margin: 15px;
+    padding: 12px 25px;
+    text-decoration: none;
+    background: gold; /* Changed to Gold for better visibility */
+    /* color: black; Text color changed to black for contrast */
+    /* font-weight: bold;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); */
+/* } */
+
+a:hover {
+    background: #ffcc00; /* Slightly darker gold shade on hover */
+    color: white;
+    transform: scale(1.05);
+} */
+
+        /* Contact Section */
+        #contact {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+        }
+
+        .contact_row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .contact_col {
+            width: 100%;
+            max-width: 500px;
+            text-align: left;
+        }
+
+        .contact_col p {
+            font-size: 20px;
+            margin: 15px 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .contact_col p span {
+            font-size: 24px;
+            margin-right: 10px;
+            color: gold;
+        }
+
+        .contact_col a {
+            color: gold;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact_col a:hover {
+            text-decoration: underline;
+        }
+
+        /* Social Media Icons */
+        .social-icons {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .social-icons a {
+            font-size: 30px;
+            color: rgba(237, 230, 230, 0.749);
+            transition: 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: gold;
+        }
+
+        /* Contact Form */
+        .contact-form {
+            width: 100%;
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            color: black;
+            border-radius: 10px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        input, textarea {
+            width:90%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 2px solid #ff5e62;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: 0.3s ease;
+            outline: none;
+        }
+
+        input:focus, textarea:focus {
+            border-color: #e60026;
+            box-shadow: 0px 0px 8px rgba(255, 94, 98, 0.5);
+        }
+
+        textarea {
+            resize: none;
+            height: 100px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #ff5e62;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #e60026;
+            transform: scale(1.05);
+        }
+
+        /* Footer */
+        .footer {
+            background: rgba(0, 0, 0, 0.7);
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+            width: 100%;
+        }
+
+        .footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            #contact {
+                width: 90%;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+        }
+        /* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ff5e62;
+    padding: 15px 30px;
+    color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Logo */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Navigation Menu */
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+    </style>
+</head>
+<body>
+
+    <h1>Contact Us</h1>
+    <p>Get in touch with us for reservations or inquiries.</p>
+    <a href="index.html">Back to Main Page</a>
+
+    <!-- Contact Section -->
+    <div id="contact">
+        <h2>📞 Get in Touch</h2>
+        <div class="contact_row">
+            <div class="contact_col">
+                <p><span>📍</span> 123, Janpath Road, Saheed Nagar, Bhubaneswar, Odisha, India - 751007</p>
+                <p><span>📧</span> <a href="mailto:foodfusion@gmail.com">foodfusion@gmail.com</a></p>
+                <p><span>📞</span> <a href="tel:+911234567890">+91 1234567890</a></p>
+            </div>
+        </div>
+    </div>
+    
+
+        <!-- Social Media Icons -->
+        <div class="social-icons">
+            <a href="https://www.facebook.com/" target="_blank" title="Facebook">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank" title="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://twitter.com/" target="_blank" title="Twitter">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="https://wa.me/911234567890" target="_blank" title="WhatsApp">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form">
+            <h2>Send Us a Message</h2>
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <textarea rows="5" placeholder="Your Message"></textarea>
+            <button>Send Message</button>
+        </div>        
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <h5>Copyright &copy; 2025 | <a href="#">Food Fusion</a></h5>
+    </div>
+
+</body>
+</html>

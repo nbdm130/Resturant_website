@@ -1,0 +1,216 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Reviews</title>
+    <header>
+        <div class="logo">🍽️ Food Fusion</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="chef.html">Chef</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="review.html">Reviews</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://img.freepik.com/free-photo/top-view-table-full-delicious-food-assortment_23-2149141359.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+        }
+        
+        h1 {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 15px;
+            margin: 0;
+            font-size: 36px;
+        }
+
+        p {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        a {
+            display: inline-block;
+            margin: 15px;
+            padding: 10px 20px;
+            text-decoration: none;
+            background: rgba(255, 255, 255, 0.3);
+            color: white;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+
+        a:hover {
+            background: rgba(255, 255, 255, 0.5);
+        }
+
+        .review-container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+        }
+
+        .review {
+            background: rgba(255, 255, 255, 0.1);
+            margin: 20px;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .review:hover {
+            transform: scale(1.05);
+        }
+
+        .stars {
+            font-size: 20px;
+            color: gold;
+        }
+
+        @media (max-width: 768px) {
+            .review-container {
+                width: 90%;
+            }
+            h1 {
+                font-size: 28px;
+            }
+            p {
+                font-size: 16px;
+            }
+        }
+        /* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ff5e62;
+    padding: 15px 30px;
+    color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Logo */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Navigation Menu */
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+    </style>
+</head>
+<body>
+
+    <h1>Customer Reviews</h1>
+    <p>See what our happy customers have to say about us.</p>
+    <a href="index.html">Back to Main Page</a>
+
+    <section id="review" class="review">
+        <div class="review-container">
+            <h2>⭐ Customer Reviews</h2>
+
+            <div class="review">
+                <p><strong>Rohan Sharma</strong></p>
+                <p class="stars">⭐⭐⭐⭐⭐</p>
+                <p>"Amazing food and great service! Will visit again!"</p>
+            </div>
+            
+            <div class="review">
+                <p><strong>Sneha Das</strong></p>
+                <p class="stars">⭐⭐⭐⭐</p>
+                <p>"Loved the desserts! The place was a bit crowded though."</p>
+            </div>
+        
+            <div class="review">
+                <p><strong>Arjun Mehta</strong></p>
+                <p class="stars">⭐⭐⭐⭐⭐</p>
+                <p>"Best restaurant in town! Highly recommend the pizza!"</p>
+            </div>
+
+            <div class="review">
+                <p><strong>Pooja Verma</strong></p>
+                <p class="stars">⭐⭐⭐⭐</p>
+                <p>"The ambiance is really nice, and the staff is friendly. Would love to come again!"</p>
+            </div>
+        
+            <div class="review">
+                <p><strong>Amit Kapoor</strong></p>
+                <p class="stars">⭐⭐⭐⭐⭐</p>
+                <p>"Excellent food! The steak was cooked perfectly, and the drinks were refreshing."</p>
+            </div>
+        
+            <div class="review">
+                <p><strong>Neha Roy</strong></p>
+                <p class="stars">⭐⭐⭐⭐⭐</p>
+                <p>"The best pasta I’ve ever had! Definitely coming back for more."</p>
+            </div>
+        
+            <div class="review">
+                <p><strong>Rahul Singh</strong></p>
+                <p class="stars">⭐⭐⭐⭐</p>
+                <p>"Great burgers and fries. The wait time was a bit long, but worth it!"</p>
+            </div>
+        
+            <div class="review">
+                <p><strong>Sara Malik</strong></p>
+                <p class="stars">⭐⭐⭐⭐⭐</p>
+                <p>"Loved the Mexican dishes! The tacos were so flavorful!"</p>
+            </div>
+        
+            <div class="review">
+                <p><strong>Vikram Yadav</strong></p>
+                <p class="stars">⭐⭐⭐⭐</p>
+                <p>"The food was good, but the service was a little slow. Hope it improves!"</p>
+            </div>
+        
+            <div class="review">
+                <p><strong>Ritika Bose</strong></p>
+                <p class="stars">⭐⭐⭐⭐⭐</p>
+                <p>"Fantastic experience! The desserts were delicious!"</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <h5>&copy; 2025 | <a href="#" style="color:white;">Food Fusion</a></h5>
+    </footer>
+
+</body>
+</html>
